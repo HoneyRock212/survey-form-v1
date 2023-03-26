@@ -38,7 +38,13 @@ try {
 }
 
 constant.PORT  		= 3000;
-
+constant.DATABASE = {
+    host: 'localhost',
+    user: 'root',
+    password: 'Abenido@98',
+    database: 'express_mvc',
+    port: 3306
+}
 constant.SESSION_SECRET = "keyboard cat";
 constant.SESSION_NAME   = "some secret session name";
 constant.SERVER         = "some server"; 

@@ -1,10 +1,6 @@
-const Mysql         = require('mysql');
+const Mysql         = require('mysql2/promise');
 const Constants     = require("./constants");
 
-var connection      = Mysql.createConnection(Constants.DATABASE);
-
-connection.connect(function(err) {
-    if (err) throw err;
-});
+var connection      = Mysql.createPool(Constants.DATABASE);
 
 module.exports = connection;
